@@ -14,6 +14,8 @@
 		B86C9F132203BA56001D645C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86C9F112203BA56001D645C /* LaunchScreen.storyboard */; };
 		B86C9F1E2203BA56001D645C /* TempConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86C9F1D2203BA56001D645C /* TempConverterTests.swift */; };
 		B86C9F292203BA56001D645C /* TempConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86C9F282203BA56001D645C /* TempConverterUITests.swift */; };
+		B87908A9221B95E5004988D7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87908A8221B95E5004988D7 /* MapKit.framework */; };
+		B87908AB221B9EA3004988D7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87908AA221B9EA3004988D7 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B852C84E2205FB3400533F12 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversionViewController.swift; path = TempConverter/ConversionViewController.swift; sourceTree = "<group>"; };
+		B852C84E2205FB3400533F12 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		B86C9F052203BA55001D645C /* TempConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86C9F082203BA55001D645C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86C9F0D2203BA55001D645C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		B86C9F242203BA56001D645C /* TempConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86C9F282203BA56001D645C /* TempConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConverterUITests.swift; sourceTree = "<group>"; };
 		B86C9F2A2203BA56001D645C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B87908A8221B95E5004988D7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B87908AA221B9EA3004988D7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87908A9221B95E5004988D7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,11 +82,11 @@
 		B86C9EFC2203BA55001D645C = {
 			isa = PBXGroup;
 			children = (
-				B852C84E2205FB3400533F12 /* ConversionViewController.swift */,
 				B86C9F072203BA55001D645C /* TempConverter */,
 				B86C9F1C2203BA56001D645C /* TempConverterTests */,
 				B86C9F272203BA56001D645C /* TempConverterUITests */,
 				B86C9F062203BA55001D645C /* Products */,
+				B87908A7221B95E4004988D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +103,10 @@
 		B86C9F072203BA55001D645C /* TempConverter */ = {
 			isa = PBXGroup;
 			children = (
+				B852C84E2205FB3400533F12 /* ConversionViewController.swift */,
 				B86C9F082203BA55001D645C /* AppDelegate.swift */,
 				B86C9F0C2203BA55001D645C /* Main.storyboard */,
+				B87908AA221B9EA3004988D7 /* MapViewController.swift */,
 				B86C9F0F2203BA56001D645C /* Assets.xcassets */,
 				B86C9F112203BA56001D645C /* LaunchScreen.storyboard */,
 				B86C9F142203BA56001D645C /* Info.plist */,
@@ -123,6 +130,14 @@
 				B86C9F2A2203BA56001D645C /* Info.plist */,
 			);
 			path = TempConverterUITests;
+			sourceTree = "<group>";
+		};
+		B87908A7221B95E4004988D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B87908A8221B95E5004988D7 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B852C84F2205FB3400533F12 /* ConversionViewController.swift in Sources */,
+				B87908AB221B9EA3004988D7 /* MapViewController.swift in Sources */,
 				B86C9F092203BA55001D645C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
