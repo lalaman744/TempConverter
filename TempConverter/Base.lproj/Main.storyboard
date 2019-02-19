@@ -13,16 +13,31 @@
         <!--Map-->
         <scene sceneID="LwY-j2-cPP">
             <objects>
-                <viewController id="5Wj-Iw-ukN" customClass="MapViewController" customModule="TempConverter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="qef-Dt-12R">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
+                <viewController id="5Wj-Iw-ukN" customClass="WebViewController" customModule="TempConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" id="CRS-km-kYe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Le7-CJ-rwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1760.8" y="121.88905547226388"/>
+            <point key="canvasLocation" x="1375" y="122"/>
+        </scene>
+        <!--Web-->
+        <scene sceneID="VT5-L4-vzV">
+            <objects>
+                <viewController title="Web" id="zkC-Sa-vrc" sceneMemberID="viewController">
+                    <wkWebView key="view" contentMode="scaleToFill" id="ocZ-sB-49c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <wkWebViewConfiguration key="configuration">
+                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                            <wkPreferences key="preferences"/>
+                        </wkWebViewConfiguration>
+                    </wkWebView>
+                    <tabBarItem key="tabBarItem" title="Web" id="EeS-K4-XbA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UtV-EV-Eb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2000.8" y="121.88905547226388"/>
         </scene>
         <!--Convert-->
         <scene sceneID="tne-QT-ifu">
@@ -111,17 +126,19 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="uLd-G4-d2L" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UwC-5Q-wiS">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="GKg-Z4-cFN"/>
                         <segue destination="5Wj-Iw-ukN" kind="relationship" relationship="viewControllers" id="thN-jb-YFW"/>
+                        <segue destination="zkC-Sa-vrc" kind="relationship" relationship="viewControllers" id="zKZ-5f-ppc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3k5-h6-mXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821.60000000000002" y="121.88905547226388"/>
+            <point key="canvasLocation" x="756" y="122"/>
         </scene>
     </scenes>
 </document>

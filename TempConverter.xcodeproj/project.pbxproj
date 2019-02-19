@@ -16,6 +16,8 @@
 		B86C9F292203BA56001D645C /* TempConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86C9F282203BA56001D645C /* TempConverterUITests.swift */; };
 		B87908A9221B95E5004988D7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87908A8221B95E5004988D7 /* MapKit.framework */; };
 		B87908AB221B9EA3004988D7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87908AA221B9EA3004988D7 /* MapViewController.swift */; };
+		B8CA39C3221C86FA0037CABA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CA39C2221C86FA0037CABA /* WebKit.framework */; };
+		B8CA39C5221C8A610037CABA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CA39C4221C8A610037CABA /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		B86C9F2A2203BA56001D645C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B87908A8221B95E5004988D7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B87908AA221B9EA3004988D7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B8CA39C2221C86FA0037CABA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B8CA39C4221C8A610037CABA /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CA39C3221C86FA0037CABA /* WebKit.framework in Frameworks */,
 				B87908A9221B95E5004988D7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +115,7 @@
 				B86C9F0F2203BA56001D645C /* Assets.xcassets */,
 				B86C9F112203BA56001D645C /* LaunchScreen.storyboard */,
 				B86C9F142203BA56001D645C /* Info.plist */,
+				B8CA39C4221C8A610037CABA /* WebViewController.swift */,
 			);
 			path = TempConverter;
 			sourceTree = "<group>";
@@ -135,6 +141,7 @@
 		B87908A7221B95E4004988D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B8CA39C2221C86FA0037CABA /* WebKit.framework */,
 				B87908A8221B95E5004988D7 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -274,6 +281,7 @@
 				B852C84F2205FB3400533F12 /* ConversionViewController.swift in Sources */,
 				B87908AB221B9EA3004988D7 /* MapViewController.swift in Sources */,
 				B86C9F092203BA55001D645C /* AppDelegate.swift in Sources */,
+				B8CA39C5221C8A610037CABA /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
