@@ -14,6 +14,10 @@
         <scene sceneID="LwY-j2-cPP">
             <objects>
                 <viewController id="5Wj-Iw-ukN" customClass="WebViewController" customModule="TempConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="EVZ-Ik-E9Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </mapView>
                     <tabBarItem key="tabBarItem" title="Map" id="CRS-km-kYe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Le7-CJ-rwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
